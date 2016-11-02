@@ -11,9 +11,8 @@
 	<body>
 		<div class="header">
 			<a href="/">CharEquip</a>
-			<img src="/images/logo_sword.png" alt="Mountain View" style="width:400px;height:50px;">
+<!-- 			<img src="/images/logo_sword.png" alt="Mountain View" style="width:100%;height:100%;"> -->
 		</div>
-		
 		<div class="slogan-wrapper">
 			Good. Bad. I'm the guy with the gun.
 		</div>

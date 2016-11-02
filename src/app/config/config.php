@@ -19,11 +19,19 @@ $config = [
 			'controller' => 'IndexController',
 			'action' => 'contactsAction'
 		],
-		'/tasks/([a-zA-Z0-9]{1,})/([0-9]{1,})' => [
+/*		'/tasks/([a-zA-Z0-9]{1,})/([0-9]{1,})' => [
 			'controller' => 'TaskController',
 			'action' => 'indexAction',
 			'parameters' => ['section', 'task']
-		]
+		]*/
+		'/delivery' => [
+			'controller' => 'IndexController',
+			'action' => 'deliveryAction'
+		],
+		'/payment' => [
+			'controller' => 'IndexController',
+			'action' => 'paymentAction'
+		],
 	],
 	'path_to_views' => '/src/app/tasksApp/view/'
 ];

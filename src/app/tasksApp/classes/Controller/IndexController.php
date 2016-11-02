@@ -16,4 +16,14 @@ class IndexController extends Controller
 	{
 		$this->render('pages:contacts');
 	}
+
+	public function deliveryAction($request)
+	{
+		$this->render('pages:delivery');
+	}
+	
+	public function paymentAction($request)
+	{
+		$this->render('pages:payment');
+	}
 }

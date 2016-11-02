@@ -1,51 +1,22 @@
 <div class="menu">
 	<ul>
 		<li>
+			<a href="/">Main</a>
+		</li>
+		<li>
+			<a href="/catalogue">Catalogue</a>
+		</li>
+		<li>
 			<a href="/about">About</a>
 		</li>
 		<li>
+			<a href="/delivery">Delivery</a>
+		</li>
+		<li>
+			<a href="/payment">Pay methods</a>
+		</li>
+		<li>
 			<a href="/contacts">Contacts</a>
-		</li>
-		<li>
-			Loops
-			<ul>
-				<li>
-					<a href="/tasks/loops/1">1</a>
-				</li>
-				<li>
-					<a href="/tasks/loops/2">2</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			Arrays 1
-			<ul>
-				<li>
-					<a href="/tasks/arrays_1/1">1</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			MySQL
-			<ul>
-				<li>
-					<a href="/tasks/mysql/1">1</a>
-				</li>
-				<li>
-					<a href="/tasks/mysql/2">2</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			Form
-			<ul>
-				<li>
-					<a href="/tasks/form/1">1</a>
-				</li>
-				<li>
-					<a href="/tasks/form/2">2</a>
-				</li>
-			</ul>
 		</li>
 	</ul>
 </div>

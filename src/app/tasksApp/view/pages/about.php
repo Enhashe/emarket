@@ -1,4 +1,4 @@
 <h1>About</h1>
 <p>
-	There is text about me ;)
+	A long time ago in a galaxy far, far away....
 </p>
