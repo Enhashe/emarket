@@ -7,7 +7,7 @@ function getClassics($dbConnection)
 	if (!$dbConnection) {
 		return [];
 	}
-	$statement = $dbConnection->query('SELECT * FROM classics');
+	$statement = $dbConnection->query('SELECT * FROM category');
 	$statement->setFetchMode(PDO::FETCH_ASSOC);
 	$rows = $statement->fetchAll();
 	return var_export($rows, true);

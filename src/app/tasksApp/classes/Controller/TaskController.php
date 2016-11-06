@@ -7,7 +7,6 @@ class TaskController extends Controller
 		$inputData = [];
 		if (!empty($request['task_run'])) {
 			$inputData = explode(PHP_EOL, $request['input_data']);
-			var_dump($inputData);
 		}
 		$dbConnection = $this->application->getDbConnection();
 		$section = (!empty($request['section'])) ? $request['section'] : '';

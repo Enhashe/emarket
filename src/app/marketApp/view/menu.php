@@ -4,7 +4,7 @@
 			<a href="/">Main</a>
 		</li>
 		<li>
-<!-- 			<?php //require __DIR__ . '/category.php' ?> -->
+			<?php require __DIR__ . '/menu_catalogue.php' ?>
 		</li>
 		<li>
 			<a href="/about">About</a>

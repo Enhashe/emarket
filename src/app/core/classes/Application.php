@@ -5,6 +5,7 @@ class Application
 	protected $baseDir;
 	protected $config;
 	protected $dbConnection;
+	protected $catalogue;
 	protected $router;
 	protected $view;
 
@@ -18,8 +19,9 @@ class Application
 		$this->config = new Config($pathToConfig);
 		$this->dbConnection = $this->createDbConnection();
 		$this->router = $this->createRouter();
+		$this->catalogue = $this->createCatalogue();
 		$this->view = $this->createView();
-
+		var_dump($this);
 		return $this;
 	}
 
@@ -30,7 +32,6 @@ class Application
 		$action = $controllerParameters['action'];
 		$parameters = !empty($controllerParameters['parameters']) ? $controllerParameters['parameters'] : [];
 		$request = array_merge($request, $parameters);
-
 		$controller = ControllerFactory::create($this, $controllerName, $action);
 		$controller->$action($request);
 	}
@@ -69,6 +70,11 @@ class Application
 	protected function createView()
 	{
 		$pathToViews = $this->baseDir . $this->config->get('path_to_views');
-		return new View($pathToViews);	
+		return new View($pathToViews);
+	}
+
+	protected function createCatalogue()
+	{
+		return new Catalogue($this->dbConnection);
 	}
 }
