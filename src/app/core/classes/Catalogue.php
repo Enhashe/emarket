@@ -3,14 +3,9 @@ class Catalogue
 {
 	protected $catalogue;
 
-	public function __construct($dbConnection)
+	public function __construct()
 	{
-		if (!$dbConnection) {
-		return [];
-		}
-		$statement = $dbConnection->query('SELECT * FROM category');
-		$statement->setFetchMode(PDO::FETCH_ASSOC);
-		$this->catalogue = $statement->fetchAll();
+		
 	}
 
 	public function getCategory($name)
@@ -24,5 +19,13 @@ class Catalogue
 			}
 		}
 		return $category;
+	}
+
+	public function getCatalogue($dbConnection)
+	{
+		$dbConnection = (isset($dbConnection)) ? $dbConnection : [] ;
+		$statement = $dbConnection->query('SELECT * FROM category');
+		$statement->setFetchMode(PDO::FETCH_ASSOC);
+		$this->catalogue = $statement->fetchAll();
 	}
 }

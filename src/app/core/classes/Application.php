@@ -75,6 +75,8 @@ class Application
 
 	protected function createCatalogue()
 	{
-		return new Catalogue($this->dbConnection);
+		$catalogue = new Catalogue();
+		$catalogue->getCatalogue($this->dbConnection);
+		return $catalogue;
 	}
 }
