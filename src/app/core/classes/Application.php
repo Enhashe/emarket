@@ -21,7 +21,6 @@ class Application
 		$this->router = $this->createRouter();
 		$this->catalogue = $this->createCatalogue();
 		$this->view = $this->createView();
-		var_dump($this);
 		return $this;
 	}
 
@@ -70,13 +69,14 @@ class Application
 	protected function createView()
 	{
 		$pathToViews = $this->baseDir . $this->config->get('path_to_views');
-		return new View($pathToViews);
+		$viewCatalogue = $this->catalogue->getFull();
+		return new View($pathToViews, $viewCatalogue);
 	}
 
 	protected function createCatalogue()
 	{
 		$catalogue = new Catalogue();
-		$catalogue->getCatalogue($this->dbConnection);
+		$catalogue->get($this->dbConnection);
 		return $catalogue;
 	}
 }

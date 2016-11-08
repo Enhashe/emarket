@@ -21,11 +21,21 @@ class Catalogue
 		return $category;
 	}
 
-	public function getCatalogue($dbConnection)
+	public function get($dbConnection)
 	{
 		$dbConnection = (isset($dbConnection)) ? $dbConnection : [] ;
 		$statement = $dbConnection->query('SELECT * FROM category');
 		$statement->setFetchMode(PDO::FETCH_ASSOC);
 		$this->catalogue = $statement->fetchAll();
+	}
+
+	public function getFull()
+	{
+		$input = $this->catalogue;
+		$result = [];
+		foreach ($input as $key => $value) {
+			 $result[$key] = $value;
+		}
+		return $result;
 	}
 }
