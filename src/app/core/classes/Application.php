@@ -45,6 +45,11 @@ class Application
 		return $this->dbConnection;
 	}
 
+	public function getCatalogue()
+	{
+		return $this->catalogue;
+	}
+
 	protected function createDbConnection()
 	{
 		$dbParameters = $this->config->get('db');

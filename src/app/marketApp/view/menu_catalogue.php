@@ -5,10 +5,9 @@ foreach ($viewCatalogue as $key => $value) {
 	$categoryTitle = $viewCatalogue[$key]['title'];
 	$catalogueMenu .= <<<EOD
 	<li>
-	<a href="/category/$categoryId">$categoryTitle</a>
+	<a href="/catalogue/$categoryId">$categoryTitle</a>
 	</li>
 
 EOD;
 }
 echo $catalogueMenu;
-?>

@@ -13,7 +13,6 @@ class Router
 	{
 		$matchedParameters = [];
 		$requestURI = $this->parseRequest($request);
-
 		foreach ($this->map as $pattern => $parameters) {
 			$pattern = str_replace('/', '\/', $pattern);
 			if (preg_match('/^' . $pattern . '$/', $requestURI, $matches)) {

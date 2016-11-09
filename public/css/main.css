@@ -69,6 +69,43 @@ html, body {
 	width: 100%;
 	border: 1px solid #cccccc;
 }
+.container {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.catalog {
+    width: 100%;
+    background: #ecf0f1;
+    box-shadow: 0 0 3px #999999;
+}
+.catalog-item {
+	display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    min-height: 75px;
+    margin: 10px;
+    text-align: center;
+}
+.catalog-item h3{
+/*	display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    min-height: 75px;*/
+    margin: 1px;
+    text-align: center;
+}
+a{
+	text-decoration: none;
+}
+.catalog-item div{
+/*	display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    min-height: 75px;*/
+    margin: 1px;
+    text-align: center;
+}
 .copyright {
 	font-size: 10px;
 	text-align: center;
