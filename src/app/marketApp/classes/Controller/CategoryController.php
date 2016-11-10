@@ -13,8 +13,9 @@ class CategoryController extends Controller
 			$category = new Category($catId);
 			$category->createCategory($dbConnection);
 			$category->createProducts($dbConnection);
+			$title = $category->getTitle();
 			$products = $category->getProducts();
-			$this->render('pages:category', ['products' => $products]);
+			$this->render('pages:category', ['title' => $title, 'products' => $products]);
 		}
 
 }

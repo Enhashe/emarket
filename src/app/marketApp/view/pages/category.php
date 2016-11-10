@@ -1,5 +1,5 @@
 <div class="container">
-            <h1>Catalogue</h1>
+            <h1><?php echo $title?></h1>
             <div class="catalog">
                 <?php
 					$output = '';

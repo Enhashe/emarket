@@ -7,7 +7,6 @@ foreach ($viewCatalogue as $key => $value) {
 	<li>
 	<a href="/catalogue/$categoryId">$categoryTitle</a>
 	</li>
-
 EOD;
 }
 echo $catalogueMenu;

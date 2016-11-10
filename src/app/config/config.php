@@ -35,7 +35,7 @@ $config = [
 		'/catalogue/([0-9]{1,})/([0-9]{1,})' =>[
 			'controller' => 'ProductController',
 			'action' => 'indexAction',
-			'parameters' => ['prodId']
+			'parameters' => ['catId', 'prodId']
 		]
 	],
 	'path_to_views' => '/src/app/marketApp/view/'
