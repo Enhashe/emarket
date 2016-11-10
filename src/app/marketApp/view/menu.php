@@ -3,7 +3,7 @@
 		<li>
 			<a href="/">Main</a>
 		</li>
-		<li>Categories
+		<li><u>Categories</u>
 			<ul>
 			<?php require __DIR__ . '/menu_catalogue.php'; ?>
 			</ul>

@@ -11,11 +11,11 @@
 						$description = $products[$key]['description'];
 						$price = $products[$key]['price'];
 						$output .= <<<EOD
-						<a href="/catalogue/$cat_id/$id">	
+						<a href="/catalogue/$cat_id/$id">
 						<div class="catalog-item">
 							<h3>$title</h3>
-							<img src="$image"><br>
-							$description
+							<img src="$image">
+							<p>$description</p>
 							<div class="price">
 								<div class="price-value">
 									Price: $price

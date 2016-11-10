@@ -10,9 +10,10 @@
 	</head>
 	<body>
 		<div class="header">
-			<a href="/">CharEquip</a>
-<!-- 			<img src="/images/logo_sword.png" alt="Mountain View" style="width:100%;height:100%;"> -->
+			<a href="/">DressMyChar</a>
+			<div class="slogan-wrapper">
+				Good. Bad. I'm the guy with the gun.
+			</div>
+			<img class="logo" src="/images/logo_sword.png" alt="Logo">
 		</div>
-		<div class="slogan-wrapper">
-			Good. Bad. I'm the guy with the gun.
-		</div>
+		

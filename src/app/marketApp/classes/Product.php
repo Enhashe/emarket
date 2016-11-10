@@ -9,6 +9,7 @@ class Product
 	protected $title;
 	protected $description;
 	protected $image;
+	protected $cat_id;
 	protected $price;
 
 	function __construct($id)
@@ -21,9 +22,9 @@ class Product
 		$id = $this->id;
 		$dbConnection = (isset($dbConnection)) ? $dbConnection : [] ;
 		$sqlQuery = <<<SQL
-		SELECT id, title, description, price
+		SELECT id, title, description, image, cat_id, price
 			FROM product
-			WHERE id=$id
+			WHERE id = $id
 SQL;
 		$statement = $dbConnection->query($sqlQuery);
 		$statement->setFetchMode(PDO::FETCH_ASSOC);
@@ -32,6 +33,8 @@ SQL;
 		$this->id = $id;
 		$this->title = $title;
 		$this->description = $description;
+		$this->image = $image;
+		$this->cat_d = $cat_id;
 		$this->price = $price;
 	}
 
@@ -53,6 +56,11 @@ SQL;
 	public function getImage()
 	{
 		return $this->image;
+	}
+
+	public function getCatId()
+	{
+		return $this->cat_id;
 	}
 
 	public function getPrice()
