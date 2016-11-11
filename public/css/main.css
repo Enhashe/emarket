@@ -1,12 +1,14 @@
 ﻿/* GENERAL */
 html, body {
-	color: #343434;
+/*	color: #343434;*/
+	background: #D7DDEA;
 }
 
 /* PAGE STRUCTURE */
 .header, .content, .footer {
 	width: 80%;
 	margin: 5px auto;
+	background: #5883DF;
 	clear: both;
 }
 .header {
@@ -30,7 +32,7 @@ html, body {
 }
 .footer {
 	border: 1px solid #c5c1cc;
-	text-align: center;
+	text-align: right;
 	padding: 10px;
 }
 
